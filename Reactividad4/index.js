@@ -6,11 +6,11 @@ const d = document,
 const template = (data)=>{
     const html = `
     <div>
-    <hr>
+    
     <div id="price"> Price: ${data.price}</div>
-    <hr>
+    
     <div id="quantity">Quantity:${data.quantity}</div>
-    <hr>
+    
     <div id="total">Total :${data.price * data.quantity}</div>
     </div>
     `
@@ -47,9 +47,16 @@ const driver = {
     }
 };
 const setState = (data) => {
+    console.log(data)
     for(let key in data){
-        if(proxy.hasOwnProperty(key)){
-            proxy[key]=data[key];
+        if(!data[key] == ""){
+            
+            if(proxy.hasOwnProperty(key)){
+                
+                proxy[key]=data[key];
+                
+                
+            }
         }
     }
 }
