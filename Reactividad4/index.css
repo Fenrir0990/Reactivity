@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.firstContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+.secondContainer{
+    height: 30%;
+    width: 50%;
+    margin: 10%;
+    padding: 5%;
+    text-align: center;
+    background-color: rgba(16, 239, 12, 0.389);
+    border-radius: 20px;
+}
+.data{
+    height: auto;
+    width: 300px;
+    padding: 10px;
+    background-color: rgba(16, 239, 12, 0.389);
+    text-align: center;
+    margin: 0;
+    border-radius: 20px;
+}
+.text{
+    color: white;
+    font-weight: 700;
+    box-shadow: -3px 0px 106px 4px rgba(255,255,255,0.61);
+}
+.button{
+    margin: 30px;
+    padding: 10px;
+    height: auto;
+    width: auto;
+}
